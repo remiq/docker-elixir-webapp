@@ -1,0 +1,11 @@
+
+
+web:
+  image: trenpixster/elixir:1.0.4 # not official but current
+  command: (cd /app/web/; mix phoenix.server)
+  volumes:
+    - web/src:/app/web
+  ports:
+    - "3000:3000"
+
+
